@@ -1,0 +1,4 @@
+var name="Arya";
+var age=25;
+var isStudent="True";
+console.log("My Name is "+name +", I am "+age+" years old.Student: "+isStudent);

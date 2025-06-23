@@ -1,0 +1,4 @@
+var a=prompt("Enter the tweet: ");
+var cnt=a.length;
+var total_len=140;
+alert("you have used: "+cnt+" | remaining: "+(total_len-cnt)+ " Char");
