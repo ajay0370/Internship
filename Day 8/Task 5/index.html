@@ -6,77 +6,60 @@
   <title>Mondrian Project</title>
   <style>
     body {
-      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      padding: 0;
     }
 
     .container {
       display: grid;
-      grid-template-columns: 320px 190px 153px 50px;
-      grid-template-rows: 414px 130px 155px 23px;
-      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
       background-color: #000;
+      gap: 9px;
       width: 748px;
       height: 748px;
-      position: relative;
     }
 
+
     .box {
-      box-sizing: border-box;
+      background-color: #F0F1EC;
     }
 
     .red {
       background-color: #E72F24;
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
     }
 
     .white1 {
-      background-color: #F0F1EC;
-      grid-column: 2 / 5;
-      grid-row: 1 / 2;
+      grid-column: span 3;
     }
 
     .white2 {
-      background-color: #F0F1EC;
-      grid-column: 1 / 2;
-      grid-row: 2 / 4;
+      grid-row: span 2;
     }
 
     .white3 {
-      background-color: #F0F1EC;
-      grid-column: 2 / 4;
-      grid-row: 2 / 4;
+      grid-area: 2/2/4/4;
     }
 
     .blue {
       background-color: #004592;
-      grid-column: 4 / 5;
-      grid-row: 2 / 3;
+      border-bottom: 10px solid #000;
     }
 
     .white4 {
-      background-color: #F0F1EC;
-      grid-column: 4 / 5;
-      grid-row: 3 / 5;
-      margin-right: -9px;
+      grid-row: span 2;
     }
 
     .yellow {
       background-color: #F9D01E;
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      margin-left: -9px;
     }
 
     .black {
       background-color: #232629;
-      grid-column: 3 / 4;
-      grid-row: 4 / 5;
     }
     
   </style>
@@ -89,6 +72,8 @@
     <div class="box white3"></div>
     <div class="box blue"></div>
     <div class="box white4"></div>
+
+    <div class="box"></div>
     <div class="box yellow"></div>
     <div class="box black"></div>
   </div>
